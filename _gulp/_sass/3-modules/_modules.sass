@@ -1,0 +1,286 @@
+/* modules */
+.helps
+  height: 900px
+  background: linear-gradient(to left, #87fc70, #0bd318)
+  padding: 0
+  color: $color-white
+  overflow: visible
+  position: relative
+  // display: none
+  &__wrapper
+    height: 100%
+    overflow: hidden
+    p
+      top: -20px
+      opacity: 0
+
+  .container
+    position: relative
+    height: 100%
+  .h1
+    color: $color-white
+    opacity: 0
+    top: -20px
+
+  &__layer
+    overflow: hidden
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin-top: -10px
+    .layer
+      position: absolute
+      top: 0
+      opacity: 0
+      &--1
+        left: -564px !important
+        top: 147px !important
+      &--2
+        top: inherit !important
+        right: -60px !important
+        bottom: 139px !important
+        left: inherit !important
+      &--3
+        top: 240px !important
+        right: -340px !important
+        left: inherit !important
+      &--4
+        left: 343px !important
+        top: 100px !important
+      &--5
+        left: 485px !important
+        top: 800px !important
+        // bottom: -70px !important
+
+    &--last
+      overflow: inherit
+
+  .applinks
+    opacity: 0
+    top: -20px
+
+.app
+  &icon
+    margin-top: 268px
+    filter: drop-shadow(0 0 60px rgba(#045309, 0.3))
+    margin-bottom: 65px
+    display: inline-block
+    opacity: 0
+    top: -20px
+
+  &links
+    &>a
+      display: inline-block
+      &+a
+        margin-left: 30px
+
+/**/
+.iphone1
+  position: absolute
+  top: inherit !important
+  left: inherit !important
+  right: 30px !important
+  bottom: 0 !important
+
+  opacity: 0
+
+/**/
+.properties
+  padding-top: 90px
+  padding-bottom: 24px
+  // display: none
+
+  .row
+    display: flex
+
+  &__round
+    height: 468px
+    width: 468px
+    border-radius: 50%
+    border: 1px solid #dcdcdc
+    margin-left: 55px
+    position: absolute
+    margin-top: 130px
+    opacity: 0
+    // z-index: 10
+    &::after, &::before
+      position: absolute
+      left: 50%
+      top: 0
+      height: 100%
+      width: 1px
+      background-color: pink
+      // content: ''
+      z-index: 100
+    &::before
+      height: 1px
+      width: 100%
+      left: 0
+      top: 50%
+
+    &__block
+      height: 60px
+      width: 60px
+      border-radius: 50%
+      background-color: #dcdcdc
+      box-shadow: 0 0 0 5px $color-white
+      text-align: center
+      line-height: 60px
+      position: absolute
+      cursor: pointer
+      color: $color-white
+      transform: scale(1) translate(-50%, -50%)
+      transform-origin: 0 0
+      right: 85px
+      top: 20px
+      z-index: 100
+      transition: all 0.1s linear
+      opacity: 0
+      &.is-active
+        background: linear-gradient(to right, #2cde2f, #66f159)
+        transform: scale(1.45) translate(-50%, -50%)
+        box-shadow: 0 0 0 3px $color-white, 0 0 30px rgba(#045309, 0.3)
+
+      &--2
+        right: -20px
+        top: 105px
+
+      &--3
+        top: 50%
+        right: -60px
+
+      &--4
+        top: 360px
+        right: -20px
+
+      &--5
+        top: 445px
+        right: 85px
+
+      svg
+        fill: $color-white
+        vertical-align: -8px
+        display: inline-block
+
+  &__text
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    padding-left: 20px
+    opacity: 0
+    .h2, h2
+      transform: translateY(-10px)
+      transition: all 1s ease
+    p
+      margin: 0
+      transform: translateY(-10px)
+      transition: all 1s ease
+    &.is-active
+      opacity: 1
+      .h2, h2, p
+        transform: translateY(0)
+
+/**/
+.iphone2
+  margin-left: -74px
+  position: relative
+  z-index: 50
+  opacity: 0
+
+#svg_days
+  vertical-align: -8px
+
+#svg_interface
+  vertical-align: -7px
+
+/**/
+.plan
+  background: $color-gray
+  padding-top: 110px
+  padding-bottom: 0
+  position: relative
+  // display: none
+
+  &__header
+    text-align: center
+    max-width: 850px
+    margin: 0 auto 100px
+    position: relative
+    p
+      margin: 0
+
+  .container
+    height: 100%
+
+  &__layer
+    position: absolute
+    width: 100%
+    bottom: 0
+    .container
+      position: relative
+      height: 100%
+    .layer
+      position: absolute
+      bottom: 0
+      left: 0
+      // opacity: 0
+      top: inherit !important
+
+      &--1
+        left: -386px !important
+        bottom: 360px !important
+      &--2
+        left: -130px !important
+        bottom: 165px !important
+      &--3
+        bottom: 176px !important
+        left: inherit !important
+        right: 0 !important
+      &--4
+        right: -265px !important
+        bottom: 280px !important
+        left: inherit !important
+
+/**/
+.iphone3
+  position: relative
+  width: 800px
+  height: 550px
+  margin: 0 auto
+  // background: pink
+  img
+    position: absolute
+    // top: 100%
+    opacity: 0
+    z-index: 10
+    left: -25px
+    // transform: translateY(100%)
+    &:first-child
+      margin-top: 100px
+    &:nth-child(2)
+      left: 50%
+      transform: translateX(-50%)
+      margin-left: 12px
+      z-index: 50
+    &:last-child
+      right: -45px
+      left: inherit
+      margin-top: 100px
+
+/**/
+.manage
+  padding-top: 130px
+  padding-bottom: 130px
+  // display: none
+
+  &__text
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    padding-left: 20px
+
+  .row
+    display: flex

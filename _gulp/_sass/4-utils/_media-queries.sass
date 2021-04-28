@@ -1,0 +1,258 @@
+/*==========  Desktop First Method  ==========*/
+
+/* 1920 */
+@media only screen and (min-width : 1919px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1439px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .header
+    opacity: 1
+
+  .helps
+    .appicon, .h1, .applinks
+      opacity: 1
+      top: 0 !important
+      transform: translateX(0) !important
+    &__wrapper
+      p
+        opacity: 1
+        top: 0
+    &__layer
+      .layer
+        opacity: 1
+        &--1, &--3
+          display: none
+        &--4
+          left: 243px !important
+        &--5
+          top: inherit !important
+          position: absolute !important
+          left: 365px !important
+          bottom: -80px !important
+  .iphone1, .iphone3 img
+    opacity: 1
+  .plan
+    padding-top: 60px
+    &__header
+      margin-bottom: 60px
+      opacity: 1 !important
+      visibility: visible !important
+    &__layer
+      .layer
+        &--1, &--4
+          display: none
+
+  .manage
+    padding-top: 50px
+    padding-bottom: 40px
+    &__text
+      opacity: 1 !important
+      visibility: visible !important
+      position: relative
+      top: inherit
+      transform: translateY(0) !important
+    .img-responsive
+      opacity: 1 !important
+      visibility: visible !important
+
+  .footer
+    &__layer
+      .layer
+        &--1, &--5
+          display: none
+    &__text
+      opacity: 1 !important
+      visibility: visible !important
+
+  .properties
+    &__round, .iphone2, &__text
+      opacity: 1
+    &__round
+      &__block
+        opacity: 1
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .h1, h1
+    font-size: rem(51)
+  .h2, h2
+    font-size: rem(38)
+
+  .appicon
+    margin-top: 170px
+    margin-bottom: 40px
+    img
+      width: 80px
+  .iphone1
+    width: 200px
+
+  .helps
+    height: 650px
+    &__layer
+      .layer
+        &--4
+          width: 150px
+        &--5
+          width: 90px
+          bottom: -35px !important
+        &--2
+          width: 60px
+          right: -20px !important
+          bottom: 80px !important
+
+  .iphone3
+    width: 570px
+    height: 435px
+    img
+      &:first-child, &:last-child
+        width: 250px
+      &:nth-child(2)
+        width: 320px
+
+  .footer
+    padding-top: 70px
+    padding-bottom: 70px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .helps
+    height: auto
+    padding-bottom: 50px
+    &__layer
+      .layer
+        &--5
+          left: 30px !important
+          width: 60px
+        &--4
+          width: 100px
+        &--2
+          right: 40px !important
+
+  .appicon
+    margin-top: 120px
+    margin-bottom: 20px
+    img
+      width: 60px
+
+  .h1, h1
+    font-size: rem(41)
+  .h2, h2
+    font-size: rem(32)
+
+  .applinks
+    text-align: center
+    a
+      display: inline
+      &+a
+        margin-left: 10px
+
+  .iphone1
+    display: none
+
+  .iphone3
+    width: 100%
+    max-width: 525px
+    img
+      &:first-child
+        margin-left: -30px
+      &:last-child
+        margin-right: -30px
+        // display: none
+      &:nth-child(2)
+
+  .manage
+    .row
+      display: block
+    &__text
+      position: inherit
+      transform: translateX(0)
+    .img-responsive
+      margin-left: auto
+      margin-right: auto
+
+  .properties
+    padding-top: 60px
+    &__text
+      // position: inherit
+      // transform: translateX(0)
+      // top: inherit
+      padding-right: 20px
+    &__round
+      position: inherit
+      height: 330px
+      width: 60px
+      border: 0
+      margin: 0
+
+      &__block
+        top: 0
+        right: 0
+        transform: scale(1) translate(0)
+        box-shadow: 0 0 0 1px $color-white
+        &--2
+          top: 65px
+        &--3
+          top: 130px
+        &--4
+          top: 195px
+        &--5
+          top: 260px
+        &.is-active
+          transform: scale(1) translate(0)
+          box-shadow: 0 0 0 3px #ffffff, 0 0 30px rgba(4, 83, 9, 0.3)
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  /**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 319px)
+  /**/
+
+@media (max-height: 400px)
+  .mobile__navigation
+    [role="navigation"]
+      .span
+        a
+          font-size: rem(16)
+          padding-top: 7px
+          padding-bottom: 7px
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .container
+    width: 750px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .container
+    width: 970px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .container
+    width: 1170px
+
+/* 1440 */
+@media only screen and (min-width : 1440px)
+  /**/
+
+/* 1920 */
+@media only screen and (min-width : 1920px)
+  /**/

@@ -1,0 +1,78 @@
+/* header */
+.header
+  position: fixed
+  width: 100%
+  transition: all 0.3s linear
+  z-index: 1000
+  padding: 28px 0
+  // top: -10px
+  opacity: 0
+  left: 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+  &.is-scroll
+    padding: 15px 0
+    background: $color-white
+    box-shadow: 0 0 10px rgba(#045309, 0.3)
+
+    .nav__button
+      span
+        background-color: $color-green
+
+    .logo
+      img
+        background-position: bottom center
+
+    .getapp
+      color: $color-white
+      background-color: $color-green
+      box-shadow: none
+      &:hover
+        color: $color-lightgreen
+
+    .navigation
+      li
+        .span
+          a
+            color: $color-green
+            &:hover
+              color: $color-white
+              &::after
+                background-color: $color-green
+
+        &.active
+          .span
+            a
+              color: $color-white
+              &::after
+                background-color: $color-green
+
+.getapp
+  font-weight: bold
+  font-size: rem(18)
+  color: $color-lightgreen
+  display: inline-block
+  width: 140px
+  text-align: center
+  height: 42px
+  line-height: 42px
+  background-color: $color-white
+  border-radius: 25px
+  text-decoration: none
+  box-shadow: 0 0 60px rgba(#045309, 0.3)
+  &:hover, &:focus
+    color: $color-green
+    box-shadow: 0 0 60px rgba(#045309, 0.7)
+
+.logo
+  margin-top: 4px
+  img
+    height: 38px
+    width: 133px
+    background:
+      image: url('../img/logo-FitApp.png')
+      position: top center
+      repeat: no-repeat
